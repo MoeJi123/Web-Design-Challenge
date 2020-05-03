@@ -52,6 +52,12 @@
     background: white;
 }
 
+.nav-item-dropdown {
+    color: grey;
+    font-size: 15px;    
+}
+
+
 .temp_row {
     display: flex;
     flex-wrap: wrap;

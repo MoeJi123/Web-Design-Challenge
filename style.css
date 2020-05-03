@@ -6,9 +6,8 @@
     background-color: rgb(61, 175, 150);
 }
 
-.nav {
+#nav-item-dropdown {
     color: grey;
-    text-align: right;
     font-size: 15px;
 }
 
@@ -17,8 +16,8 @@
     width: 100%;
     padding-right: 30px;
     padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 20px;
+    margin-left: 20px;
     }
 
 #summary_title {
@@ -43,19 +42,13 @@
     float: left;
   }
 
-.col-md-8 {
+/* .col-md-8 {
     background: white;
 }
 
 .col-md-4 {
     background: white;
-}
-
-.nav-item-dropdown {
-    color: grey;
-    font-size: 15px;    
-}
-
+} */
 
 .temp_row {
     display: flex;

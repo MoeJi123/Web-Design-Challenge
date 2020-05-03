@@ -11,8 +11,11 @@
 .nav {
     color: grey;
     text-align: right;
-    font-size: 10px;
-    font-weight: lighter;
+    font-size: 20px;
+}
+
+.container {
+    background-color: rgb(189, 186, 186);
 }
 
 #summary_title {
@@ -24,8 +27,7 @@
 #summary {
     color: grey;
     text-align: right;
-    font-size: 10px;
-    font-weight: lighter;
+    font-size: 20px;
 }
 
 #temp-image {
@@ -39,7 +41,7 @@
   }
 
 .col-md-8 {
-    background: whitesmoke;
+    background: white;
 }
 
 .temp_row {

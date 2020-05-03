@@ -12,8 +12,7 @@
 }
 
 .body_container {
-    background-color: rgb(189, 186, 186);
-    width: 100%;
+    background-color: rgb(223, 221, 221);
     padding-right: 30px;
     padding-left: 30px;
     margin-right: 20px;
@@ -42,13 +41,17 @@
     float: left;
   }
 
-/* .col-md-8 {
+.col-md-8 {
     background: white;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .col-md-4 {
     background: white;
-} */
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 .temp_row {
     display: flex;

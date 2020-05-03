@@ -8,10 +8,24 @@
         background: rgb(61, 175, 150);
 }
 
+.nav {
+    color: grey;
+    text-align: right;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
 #summary_title {
     font-size: 28px;
     color: rgb(61, 175, 150);
     text-align: left;   
+}
+
+#summary {
+    color: grey;
+    text-align: right;
+    font-size: 10px;
+    font-weight: lighter;
 }
 
 #temp-image {
@@ -27,8 +41,6 @@
 .col-md-8 {
     background: whitesmoke;
 }
-
-
 
 .temp_row {
     display: flex;

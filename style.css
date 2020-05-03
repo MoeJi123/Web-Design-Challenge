@@ -1,11 +1,10 @@
-#home_header {
-        padding: 20px 0;
-        margin: 0;
-        margin-bottom: 20px;
-        font-size: 28px;
-        color: #eee;
-        text-align: left;
-        background: rgb(61, 175, 150);
+#header_text {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: #eee;
+    text-align: left;
+    background: rgb(61, 175, 150);
 }
 
 .nav {
@@ -16,7 +15,12 @@
 
 .body_container {
     background-color: rgb(189, 186, 186);
-}
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 #summary_title {
     font-size: 28px;

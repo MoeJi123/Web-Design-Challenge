@@ -11,7 +11,7 @@
 .nav {
     color: grey;
     text-align: right;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .container {
@@ -27,12 +27,12 @@
 #summary {
     color: grey;
     text-align: left;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #temp-image {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
   }
 

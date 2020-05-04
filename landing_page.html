@@ -16,7 +16,7 @@
         <div class="header_container">
             <div class="row justify-content-between">
                 <div class="col-4">
-                  <h3 id="header_text">Latitude</h3>
+                  <p id="header_text">Latitude</p>
                 </div>
                 <div class="col-4">
                     <ul class="nav">
@@ -45,29 +45,38 @@
     <div class="body_container">
       <!--Normally these medium columns go full wide on small screen sizes-->
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <h1 id="summary_title">Summary: Lattitude vs.X</h1>
+            <hr> 
             <section id="summary">
                 <section id="figure">
-                  <img id="temp-image" src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/04/12185602/Lagotto-Romangolo-Tongue-Out.jpg" alt="LatitudexTemp">
+                  <img id="temp-image" src="assets/LatitudexTemp.png" alt="LatitudexTemp">
                 </section>
                 <p>The purpose of this project was to anayze how weather changes as you get closer to the equator. To accomplish this Analysis, we first pulled data from the OpenWeather API to assemble a dataset on over 500 cities.</p>
                 <p>After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temparature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations of any trends and correlations witnessed.</p>
             </section>
         </div>
         <div class="col-md-4">
-            <div class="temp_row">
-                <div class="column">
-                  <img src="https://www.dropbox.com/s/46fmku5b1dvlcpa/LatitudexTemp.png?dl=0">
-                  <img src="https://www.dropbox.com/s/cr53a5iqqldfasq/LatitudexCloudiness.png?dl=0">
+            <p id="visual_title">Visualizations</p>           
+            <hr> 
+            <div class="row">
+                <div class="col-md-5 imageContainer">
+                    <img src="assets/LatitudexTemp.png" href="#">
                 </div>
-                <div class="temp_column">
-                  <img src="https://www.dropbox.com/s/z2ek4uubd16houo/LatitudexHumidity.png?dl=0">
-                  <img src="https://www.dropbox.com/s/cak8s3m8gaylozz/LatitudexWind_speed.png?dl=0">
+                <div class="col-md-5 imageContainer">
+                    <img src="assets/LatitudexCloudiness.png" href="#">
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 imageContainer">
+                    <img src="assets/LatitudexTemp.png" href="#">
+                </div>
+                <div class="col-md-5 imageContainer">
+                    <img src="assets/LatitudexCloudiness.png" href="#">
+                </div>
+            </div>
         </div>
-      </div>
-  
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

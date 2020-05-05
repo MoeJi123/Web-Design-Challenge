@@ -1,19 +1,20 @@
 <html lang="en-us">
 
 <head>
-
   <meta charset="UTF-8">
-  <title>Latitude Analysis Dashboard - Cloudiness Page</title>
 
-  <!-- Bootstrap CDN -->
+<head>
+  <title>
+    Latitude Analysis Dashboard - Data Page
+  </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="humidity_style.css">
+  <link rel="stylesheet" href="data_style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="header_container">
+    <header>
+      <div class="header_container">
         <div class="row justify-content-between">
             <div class="col-4">
               <p id="header_text" src = "file:///Users/Jiyumeng/Desktop/Web-Design-Challenge/landing_page.html">Latitude</p>
@@ -39,38 +40,39 @@
                     </li>
                   </ul>
             </div>
-          </div>
-  </header>
+      </div>
+    </header>
 
-    <div class="body_container">
-        <!--Normally these medium columns go full wide on small screen sizes-->
-        <div class="row">
-          <div class="col-md-6">
-              <h1 id="summary_title">Humidity</h1>
-              <hr> 
-              <img id="temp-image" src="assets/LatitudexHumidity.png" alt="LatitudexHumidity">
-              <p id="summary">There is no strong relationship between latitude and humidity. However, almost all cities' humidity is lower than or equal to 100%. And there are two outliers in the dataset.</p>
-          </div>
-          <div class="col-md-4">
-              <p id="visual_title">Visualizations</p>           
-              <hr> 
-              <div class="row">
-                  <div class="col-md-5 imageContainer">
-                      <img src="assets/LatitudexTemp.png" id = "temp">
-                  </div>
-                  <div class="col-md-5 imageContainer">
-                      <img src="assets/LatitudexCloudiness.png" id="cloud">
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-5 imageContainer">
-                      <img src="assets/LatitudexWind_speed.png" id = "latitude" >
-                  </div>
-                  <div class="col-md-5 imageContainer">
-                      <img src="assets/LatitudexHumidity.png" id = "humidity" >
-                  </div>
-              </div>
-          </div>
+    <table src='Resources/cities.csv'>
+    
+      <thead>
+        <tr><th>City_ID</th><th>City</th><th>Cloudiness</th><th>Country</th><th>Date</th><th>Humidity</th><th>Lng</th><th>Max Temp</th><th>Wind speed</th></tr>
+      </thead>>
+
+      <tbody> 
+        <tr>
+        <td><span datafld='City_ID'> </span></td>
+        <td><span datafld='City'></span></td>
+        <td><span datafld='Cloudiness'> </span></td>
+        <td><span datafld='Country'> </span></td>
+        <td><span datafld='Date'> </span></td>
+        <td><span datafld='Humidity'></span></td>
+        <td><span datafld='Lng'> </span></td>
+        <td><span datafld='Max_Temp'> </span></td>
+        <td><span datafld='Wind_speed'> </span></td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <object id="data">
+      <param nAme="DataURL" value="cities.csv">
+      <param nAme="UseHeader" value="true">
+    </object>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

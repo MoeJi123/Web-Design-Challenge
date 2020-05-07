@@ -1,0 +1,79 @@
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Analysis Dashboard - Temperature Page</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header_container">
+        <div class="row justify-content-between">
+            <div class="col-4">
+              <p id="header_text"><a href ="index.html">Latitude</a></p>
+            </div>
+            <div class="col-4">
+                <ul class="nav">
+                    <li class="nav-item-dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="temp_visualization_page.html">Lattitude x Temperature</a>
+                          <a class="dropdown-item" href="cloudiness_visualization_page.html">Lattitude x Cloudiness</a>
+                          <a class="dropdown-item" href="wind_visualization_page.html">Lattitude x Windspeed</a>
+                          <a class="dropdown-item" href="humidity_visualization_page.html">Lattitude x Humidity</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="comparisons_page.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+  </header>
+
+    <div class="body_container">
+        <!--Normally these medium columns go full wide on small screen sizes-->
+        <div class="row">
+          <div class="col-md-6">
+              <h1 id="summary_title">Wind Speed</h1>
+              <hr> 
+              <img class="visual-image" src="../assets/images/LatitudexWind_speed.png" alt="LatitudexWind_speed">
+              <p id="summary">There is no strong relationship between latitude and wind speed. However, in northern hemispheres there is a flurry of cities with over 20 mph of wind.</p>
+          </div>
+          <div class="col-md-4">
+            <p id="visual_title">Visualizations</p>           
+            <hr> 
+            <div class="row">
+              <div class="col-md-5 imageContainer">
+                  <a href = "temp_visualization_page.html"><img src="../assets/images/LatitudexTemp.png"></a>
+              </div>
+              <div class="col-md-5 imageContainer">
+                  <a href = "cloudiness_visualization_page.html"><img src="../assets/images/LatitudexCloudiness.png"></a>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 imageContainer">
+                  <a href = "wind_visualization_page.html"><img src="../assets/images/LatitudexWind_speed.png" id = "wind"></a>
+                </div>
+                <div class="col-md-5 imageContainer">
+                  <a href = "humidity_visualization_page.html"><img src="../assets/images/LatitudexHumidity.png"></a>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Analysis Dashboard - Temperature Page</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+      <div class="header_container">
+          <div class="row justify-content-between">
+              <div class="col-4">
+                <p id="header_text"><a href ="index.html">Latitude</a></p>
+              </div>
+              <div class="col-4">
+                  <ul class="nav">
+                      <li class="nav-item-dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temp_visualization_page.html">Lattitude x Temperature</a>
+                            <a class="dropdown-item" href="cloudiness_visualization_page.html">Lattitude x Cloudiness</a>
+                            <a class="dropdown-item" href="wind_visualization_page.html">Lattitude x Windspeed</a>
+                            <a class="dropdown-item" href="humidity_visualization_page.html">Lattitude x Humidity</a>
+                          </div>
+                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="comparisons_page.html">Comparison</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                      </li>
+                    </ul>
+              </div>
+          </div>
+    </header>
+
+
+    <div id="com_container">
+        <p id="title">Comparison: Lattitude vs.X</p>
+        <hr> 
+        <p id="intro">Click any plot to get an in-depth analysis.</p>
+        <div class="row">
+          <div class="col-md-4 comp">
+            <p class="img_title">vs.Max Temperature</p>
+            <a href ="temp_visualization_page.html"><img src="../assets/images/LatitudexTemp.png" alt="LatitudexTemp"></a> 
+          </div>
+          <div class="col-md-4 comp">
+            <p class="img_title">vs.Humidity</p>
+            <a href = "humidity_visualization_page.html"><img src="../assets/images/LatitudexHumidity.png" alt="LatitudexHumidity"></a>
+          </div>
+        </div>
+          <!-- <div class="w-100"></div> -->
+        <div class="row">
+            <div class="col-md-4 comp">
+              <p class="img_title">vs.Cloudiness</p>
+              <a href="cloudiness_visualization_page.html"><img src="../assets/images/LatitudexCloudiness.png" alt="LatitudexCloud"></a>
+            </div>
+            <div class="col">
+              <p class="img_title ">vs.Wind Speed</p>
+              <a href="wind_visualization_page.html"><img src="../assets/images/LatitudexWind_speed.png" alt="LatitudexWind"></a>
+            </div>
+        </div>
+
+
+  </body>
+  
+  </html>

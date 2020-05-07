@@ -7,7 +7,11 @@
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="landing_page_style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -16,7 +20,7 @@
         <div class="header_container">
             <div class="row justify-content-between">
                 <div class="col-4">
-                  <p id="header_text" src = "https://moeji123.github.io/Web-Design-Challenge/landing_page">Latitude</p>
+                  <p id="header_text"><a href ="index.html">Latitude</a></p>
                 </div>
                 <div class="col-4">
                     <ul class="nav">
@@ -25,17 +29,17 @@
                               Plots
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="https://moeji123.github.io/Web-Design-Challenge/temp_visualization_page">Lattitude x Temperature</a>
-                              <a class="dropdown-item" href="https://moeji123.github.io/Web-Design-Challenge/cloudiness_visualization_page">Lattitude x Cloudiness</a>
-                              <a class="dropdown-item" href="https://moeji123.github.io/Web-Design-Challenge/wind_visualization_page">Lattitude x Windspeed</a>
-                              <a class="dropdown-item" href="https://moeji123.github.io/Web-Design-Challenge/humidity_visualization_page">Lattitude x Humidity</a>
+                              <a class="dropdown-item" href="temp_visualization_page.html">Lattitude x Temperature</a>
+                              <a class="dropdown-item" href="cloudiness_visualization_page.html">Lattitude x Cloudiness</a>
+                              <a class="dropdown-item" href="wind_visualization_page.html">Lattitude x Windspeed</a>
+                              <a class="dropdown-item" href="humidity_visualization_page.html">Lattitude x Humidity</a>
                             </div>
                           </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="https://moeji123.github.io/Web-Design-Challenge/comparisons_page">Comparison</a>
+                          <a class="nav-link" href="comparisons_page.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="https://moeji123.github.io/Web-Design-Challenge/data">Data</a>
+                          <a class="nav-link" href="data.html">Data</a>
                         </li>
                       </ul>
                 </div>
@@ -44,42 +48,39 @@
 
     <div class="body_container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" id="landing_6grid">
             <h1 id="summary_title">Summary: Lattitude vs.X</h1>
             <hr> 
             <section id="summary">
                 <section id="figure">
-                  <img id="temp-image" src="assets/LatitudexTemp.png" alt="LatitudexTemp">
+                  <img id="temp-image" src="../assets/images/LatitudexTemp.png" alt="LatitudexTemp">
                 </section>
                 <p>The purpose of this project was to anayze how weather changes as you get closer to the equator. To accomplish this Analysis, we first pulled data from the OpenWeather API to assemble a dataset on over 500 cities.</p>
                 <p>After assembing the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temparature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations of any trends and correlations witnessed.</p>
             </section>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="landing_4grid">
             <p id="visual_title">Visualizations</p>           
             <hr> 
             <div class="row">
                 <div class="col-md-5 imageContainer">
-                    <img src="assets/LatitudexTemp.png" href="https://moeji123.github.io/Web-Design-Challenge/temp_visualization_page">
+                    <a href="temp_visualization_page.html"><img src="../assets/images/LatitudexTemp.png" class="img-responsive fit-image"/></a>
                 </div>
                 <div class="col-md-5 imageContainer">
-                    <img src="assets/LatitudexCloudiness.png" href="https://moeji123.github.io/Web-Design-Challenge/cloudiness_visualization_page">
+                    <a href="cloudiness_visualization_page.html"><img src="../assets/images/LatitudexCloudiness.png" class="img-responsive fit-image"/></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-5 imageContainer">
-                    <img src="assets/LatitudexWind_speed.png" href="https://moeji123.github.io/Web-Design-Challenge/wind_visualization_page">
+                    <a href="wind_visualization_page.html"><img src="../assets/images/LatitudexWind_speed.png" class="img-responsive fit-image"/></a>
                 </div>
                 <div class="col-md-5 imageContainer">
-                    <img src="assets/LatitudexCloudiness.png" href="https://moeji123.github.io/Web-Design-Challenge/humidity_visualization_page">
+                    <a href="humidity_visualization_page.html"><img src="../assets/images/LatitudexHumidity.png" class="img-responsive fit-image"/></a>
                 </div>
             </div>
         </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+
   </body>
   
   </html>

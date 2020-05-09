@@ -62,6 +62,7 @@ body {background-color:  rgb(223, 221, 221);}
     margin-right: 10px;
 }
 
+
 .col-md-4 {
     background: white;
     margin-left: 40px;
@@ -158,15 +159,40 @@ body {background-color:  rgb(223, 221, 221);}
 
 
 .comp > a > img {
-    flex: 100%;
-    max-width: 100%;
+    max-width: 90%;
+    margin:0 auto;
     padding-bottom: 10px;
 }
 
 /* data.css */
+
+.data_table {
+   margin: 10px;
+   padding-top: 20px;
+   padding-left: 60px;
+
+}
+
+.data_table_container {
+    margin-top:40px;
+}
+
+
 .table {
-    background-color: rgb(223, 221, 221);
-    border-left: 20px;
-    border-right: 20px;
-    max-width: 100%;
+    /* background-color: rgb(223, 221, 221); */
+    max-width: 90%;
+}
+
+.description-content {
+    background-color: white;
+}
+
+.comparison-md-6 {
+    background: white;
+    padding-block-start: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: unset;
+    margin-left: unset;
+    margin-right: unset;
 }
